@@ -77,9 +77,7 @@ header{
     overflow-x:hidden;
 }
 #about{
-    background-color: black;
-    
-    
+    background-color: black;  
 }
 #about h3{
     padding-top: 60px;
@@ -92,7 +90,10 @@ header{
     color: white;
 }
 #project{
-    background-color: white;
+    background-image: url(/images/project.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #project h3{
     padding-top:60px;
@@ -103,7 +104,7 @@ header{
      height:200px;
 }
 #contact{
-    background-color: white;
+    background-color:black;
 }
 #contact h3{
     padding-top:70px;
