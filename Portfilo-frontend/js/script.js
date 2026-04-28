@@ -15,7 +15,7 @@ function sendMessage(event){
     const message=document.getElementById("message").value;
    
     if(!name || !email || !subject || !message){
-      swal("Error","enter all fields!","warning",{buttons:"OK"});
+      swal("Warning","Enter All Fields!","warning",{buttons:"OK"});
       return;
     }
     fetch("http://localhost:8080/portfolio/contactform",{
