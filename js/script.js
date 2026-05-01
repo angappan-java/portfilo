@@ -37,7 +37,7 @@ function sendMessage(event){
         return response.text();
     }).then(res=>{
             swal({
-                title:"Message",
+                title:"Success",
                 text:res,
                 icon:"success",
                 button:"OK"
@@ -45,7 +45,7 @@ function sendMessage(event){
             document.querySelector("form").reset();
     }).catch(err=>{
         swal({
-            title:"ERROR",
+            title:"Something went wrong!",
             text:err.message,
             icon:"error",
             button:"BACK"
