@@ -55,7 +55,7 @@ header{
     margin:0 auto;
 }
 .content ul li{
-    padding:20px;
+    padding:15px;
     list-style: none;;
 }
 .content ul li a i{
@@ -66,7 +66,7 @@ header{
     height:40px;
     border-radius: 50%;
     font-size:25px;
-    padding:5px 10px;
+    padding:9px 13px;
 }
 .content ul li a i:hover{
     color:blue;
