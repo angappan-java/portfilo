@@ -31,7 +31,7 @@ function sendMessage(event){
       swal("Warning","Enter All Fields!","warning",{buttons:"OK"});
       return;
     }
-    fetch("http://localhost:8080/portfolio/contactform",{
+    fetch("https://portfolio-backend-production-37fa.up.railway.app/portfolio/contactform",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
