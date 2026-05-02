@@ -1,11 +1,24 @@
 window.onscroll=function(){
     const nav=document.getElementById("nav");
-    if(window.scrollY>50){
+    const isExpanded=document.querySelector('.navbar-toggler').getAttribute('aria-expanded')==='true';
+    if(window.scrollY>50 ||isExpanded){
         nav.classList.add("navbar-colored","navlink-colored");
     }else{
         nav.classList.remove("navbar-colored","navlink-colored");
     }
 }
+document.querySelector('.navbar-toggler').addEventListener('click',function(){
+   const nav=document.getElementById("nav");
+   const isExpanded=document.querySelector('.navbar-toggler').getAttribute('aria-expanded')==='true';
+   
+   setTimeout(() => {
+      if(isExpanded ||window.scrolly>50){
+          nav.classList.add('navbar-colored','navlink-colored');
+      }else{
+        nav.classList.remove('navbar-colored','navlink-colored');
+      }
+   },10);
+})
 
 function sendMessage(event){
     if(event) event.preventDefault();
